@@ -5,6 +5,7 @@ import Color from './components/color';
 import { Route } from 'react-router-dom';
 import QuizQuestion from './components/QuizQuestion';
 import Video from './components/Video';
+import ImageText from './components/ImageText';
 import './App.css';
 
 const Fragment = styled.div`
@@ -39,6 +40,10 @@ class App extends React.Component {
       <Route 
         path = "/video"
         component = {Video}
+      />
+      <Route 
+        path = "/imageText"
+        component = {ImageText}
       />
       </>
     );
