@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import ProgressBar from './components/ProgressBar';
 import Color from './components/color';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import QuizQuestion from './components/QuizQuestion';
 import Video from './components/Video';
 import ImageText from './components/ImageText';
+import Compare from './components/Compare';
 import './App.css';
 
 const Fragment = styled.div`
@@ -31,7 +32,15 @@ class App extends React.Component {
       </Fragment> */}
        <Route 
         exact path = "/"
-        component = {function(){ return <h1>Let's explore question form</h1>}}
+        component = {function(){ return <>
+          <h1>Let's explore different forms</h1>
+          <ul>
+            <li><Link to="/quiz">Quiz</Link></li>
+            <li><Link to="/video">Video</Link></li>
+            <li><Link to="/imageText">Image and Text</Link></li>
+            <li><Link to="/compare">Compare</Link></li>
+          </ul>
+        </>}}
       />
       <Route 
         path = "/quiz"
@@ -44,6 +53,10 @@ class App extends React.Component {
       <Route 
         path = "/imageText"
         component = {ImageText}
+      />
+      <Route 
+        path = "/compare"
+        component = {Compare}
       />
       </>
     );

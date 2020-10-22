@@ -1,0 +1,36 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+
+    .info {
+        display: flex;
+        width: 80%;
+
+        .half {
+            margin: 10px;
+            border: 1px solid #EAEBEC;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            .title {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        .half:hover {
+            background-color: #F5F5F5;
+        }
+    }
+}
