@@ -1,0 +1,14 @@
+.video-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    align-items: center;
+
+    .text {
+        margin-bottom: 40px;
+        font-size: 34px;
+        text-align: left;
+    }
+
+}
