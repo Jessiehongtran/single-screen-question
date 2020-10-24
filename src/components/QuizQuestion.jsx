@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/Question.scss'
+import '../styles/Question.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretSquareRight} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 export default class QuizQuestion extends React.Component {
     constructor(props){
@@ -39,6 +42,13 @@ export default class QuizQuestion extends React.Component {
                     </li>)
                     : null}
                 </ul>
+                <Link to="/video">
+                    <FontAwesomeIcon 
+                            icon={faCaretSquareRight} 
+                            className="next-icon"
+                            
+                    />
+                </Link>
             </div>
         )
     }

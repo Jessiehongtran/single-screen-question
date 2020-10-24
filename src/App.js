@@ -27,9 +27,9 @@ class App extends React.Component {
     return (
       <>
       {/* <Fragment>
-        <ProgressBar percentage={this.state.percentage}/>
-        <button onClick={() => this.setState({percentage: this.state.percentage + 25})}>Next</button>
-      </Fragment> */}
+        <ProgressBar percentage={this.state.percentage}/> */}
+        {/* <button onClick={() => this.setState({percentage: this.state.percentage + 25})}>Next</button> */}
+      {/* </Fragment>  */}
        <Route 
         exact path = "/"
         component = {function(){ return <>

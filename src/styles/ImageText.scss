@@ -7,6 +7,16 @@
     margin-top: 60px;
     font-family: 'Poppins', sans-serif;
 
+    .next-icon {
+        font-size: 50px;
+        color: grey;
+        margin-top: 20px;
+    }
+
+    .next-icon:hover {
+        color: black
+    }
+
     .title {
         width: 80%;
         text-align: left;

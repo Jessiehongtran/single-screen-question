@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/Video.scss'
+import '../styles/Video.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretSquareRight} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 export default class Video extends React.Component {
     constructor(props){
@@ -22,6 +25,13 @@ export default class Video extends React.Component {
                 <video width="500" height="500" controls>
                     <source src="videos/Sphero.mp4" type="video/mp4"/>
                 </video> */}
+                <Link to="/imageText">
+                    <FontAwesomeIcon 
+                            icon={faCaretSquareRight} 
+                            className="next-icon"
+                            
+                    />
+                </Link>
             </div>
         )
     }

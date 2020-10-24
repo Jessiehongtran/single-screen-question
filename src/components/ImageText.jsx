@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/ImageText.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronLeft,faCaretSquareRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 export default class ImageText extends React.Component {
     constructor(props){
@@ -55,7 +56,16 @@ export default class ImageText extends React.Component {
                     <div className="text">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
                     </div>
+
+                    
                 </div>
+                <Link to="/compare">
+                    <FontAwesomeIcon 
+                            icon={faCaretSquareRight} 
+                            className="next-icon"
+                            
+                    />
+                </Link>
             </div>
         )
     }
